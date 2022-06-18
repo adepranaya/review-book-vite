@@ -1,18 +1,17 @@
 <template>
-  <div class="bg-accent min-h-screen">
-    <FurNavbar class="py-10"></FurNavbar>
-    <Container class="flex justify-between items-center py-10">
-      <div class="col-6">
-        <h2 class="font-heading text-7xl mb-10 text-dark">Elegant, Comfortable</h2>
-        <button class="bg-primary px-10 py-4 rounded-2xl text-white">Shopping Now</button>
+  <div>
+    <FurHeader class="py-10"></FurHeader>
+    <Container
+      class="bg-accent rounded-xl relative px-16 flex justify-between flex-wrap items-center"
+    >
+      <div class=" py-10">
+        <img src="/assets/images//decor-hero.svg" alt="" class="absolute top-0 left-0">
+        <h1 class="text-5xl leading-tight text-blue-dark">Book is a <br> window to the world</h1>
+        <p class="mt-6 mb-10">wake up your dream by reading a book every day</p>
+        <FurButton>Read Now</FurButton>
       </div>
-      <div class="col-6 flex flex-col items-center">
-        <img src="/dummy/hero.png" alt="" width="600">
-        <div class="flex gap-2 mt-10">
-          <button class="w-10 h-2 bg-primary"></button>
-          <button class="w-10 h-2 bg-gray-200"></button>
-          <button class="w-10 h-2 bg-gray-200"></button>
-        </div>
+      <div class="flex gap-8">
+        <img src="/assets/images/ilustration.png" alt="">
       </div>
     </Container>
   </div>

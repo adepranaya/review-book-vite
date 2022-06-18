@@ -1,24 +1,22 @@
 <template>
-  <header class="max-w-6xl m-auto flex justify-between">
-    <div class="flex items-center basis-0 grow">
-      <!-- assets -->
-      <img src="/logo.svg" alt="" />
-    </div>
+  <header class="max-w-6xl m-auto flex justify-center">
     <nav class="flex items-center">
       <ul class="inline-flex gap-4">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/product">Product</a></li>
-        <li><a href="/inspiration">Inspiration</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/home" class="nav-item-active">Home</a></li>
+        <li><a href="/bestseller" class="nav-item ">Bestseller</a></li>
+        <li><a href="/category" class="nav-item">Category</a></li>
+        <li><a href="/community" class="nav-item">Community</a></li>
+        <li><a href="/blog" class="nav-item">Blog</a></li>
       </ul>
     </nav>
-    <div class="flex items-center basis-0 grow justify-end">
-      <div class="flex gap-4">
-        <button><img src="/assets/icons/search.svg" alt="" /></button>
-        <button><img src="/assets/icons/cart.svg" alt="" /></button>
-        <button><img src="/assets/icons/profile.svg" alt="" /></button>
-      </div>
-    </div>
   </header>
 </template>
+
+<style>
+.nav-item {
+  @apply text-blue-dark/50
+}
+.nav-item-active {
+    @apply text-blue-dark border-b pb-2 border-primary;
+  }
+</style>

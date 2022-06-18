@@ -22,7 +22,6 @@ const props = defineProps({
     required: true,
   },
 });
-
 </script>
 
 <template>
@@ -30,15 +29,23 @@ const props = defineProps({
     class="bg-white drop-shadow-lg rounded-xl px-5 py-7 flex flex-col justify-between"
   >
     <div class="mb-6">
-      <img :src="link" alt="" height="100" class="h-60" />
+      <img :src="img" alt="" class="w-full object-cover rounded-md mb-6" />
       <div class="flex justify-between">
-        <h2 class="font-heading text-2xl">{{ name }}</h2>
-        <span class="font-bold">{{ price }}</span>
+        <h2 class="text-2xl">{{ name }}</h2>
       </div>
-      <p>{{ description }}</p>
+      <div class="flex gap-1 mt-2">
+        <img src="/assets/icons/star.svg" alt="" />
+        <img src="/assets/icons/star.svg" alt="" />
+        <img src="/assets/icons/star.svg" alt="" />
+        <img src="/assets/icons/star.svg" alt="" />
+        <img src="/assets/icons/star.svg" alt="" />
+      </div>
+      <p class="mt-6 text-gray-500">Tere liye</p>
     </div>
-    <button class="bg-primary px-5 py-2 rounded-2xl text-white">
-      Add to Chart
-    </button>
+    <div class="flex items-center gap-2">
+      <img src="/dummy/Author avatar.png" alt="">
+      <p class="font-sans">Andre Syak <span class="text-gray-400">• 1 week ago</span> </p>
+
+    </div>
   </div>
 </template>

@@ -3,12 +3,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#D34A6A",
-        accent: "#FFF3EC",
-        dark: '#423144'
+        primary: "#B4D51E",
+        accent: "#FBF4E2",
+        'blue-dark': '#463C74'
       },
       fontFamily: {
-        'sans': ['Inter', 'Sans-serif'],
+        'serif': ['Merriweather','ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'],
+        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
         'heading': ['Josefin Sans', 'Sans-serif'],
       },
     },

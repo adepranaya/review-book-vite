@@ -10,12 +10,17 @@ declare module '@vue/runtime-core' {
     Decor: typeof import('./src/components/pages/LandingPage/sections/Decor.vue')['default']
     FurButton: typeof import('./src/components/elements/FurButton.vue')['default']
     FurFooter: typeof import('./src/components/pages/LandingPage/sections/FurFooter.vue')['default']
+    FurHeader: typeof import('./src/components/elements/FurHeader.vue')['default']
     FurNavbar: typeof import('./src/components/elements/FurNavbar.vue')['default']
+    FurTopbar: typeof import('./src/components/elements/FurTopbar.vue')['default']
     Hero: typeof import('./src/components/pages/LandingPage/sections/Hero.vue')['default']
     LandingPage: typeof import('./src/components/pages/LandingPage/LandingPage.vue')['default']
     Product: typeof import('./src/components/pages/LandingPage/sections/Product.vue')['default']
     ProductCard: typeof import('./src/components/elements/ProductCard.vue')['default']
+    Reviews: typeof import('./src/components/pages/LandingPage/sections/Reviews.vue')['default']
     Subcribe: typeof import('./src/components/pages/LandingPage/sections/Subcribe.vue')['default']
+    Testimony: typeof import('./src/components/pages/LandingPage/sections/Testimony.vue')['default']
+    TestimonyCard: typeof import('./src/components/elements/TestimonyCard.vue')['default']
   }
 }
 
