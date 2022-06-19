@@ -1,4 +1,16 @@
-# Vue 3 + TypeScript + Vite
+# Review book
+This is my slicing result from https://codelillah.com
+## DEMO APP
+https://review-books.netlify.app/
+![](https://management-profile.codelillah.com/storage/ui/additional/UapNbsaojGAjjpWVkWK7P26IIzPktlJe3EES9DdJ.png)
+
+## UI & Assets
+https://codelillah.com
+
+---
+
+## Readme default ⬇️
+## Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
