@@ -1,12 +1,12 @@
 <template>
-  <header class="max-w-6xl m-auto flex justify-center">
-    <nav class="flex items-center">
-      <ul class="inline-flex gap-4">
-        <li><a href="/home" class="nav-item-active">Home</a></li>
-        <li><a href="/bestseller" class="nav-item ">Bestseller</a></li>
-        <li><a href="/category" class="nav-item">Category</a></li>
-        <li><a href="/community" class="nav-item">Community</a></li>
-        <li><a href="/blog" class="nav-item">Blog</a></li>
+  <header class="max-w-6xl m-auto flex sm:justify-center ">
+    <nav class="flex items-center overflow-x-auto h-12">
+      <ul class="inline-flex gap-4 snap-x">
+        <li><a href="/home" class="snap-center nav-item-active">Home</a></li>
+        <li><a href="/bestseller" class="snap-center nav-item ">Bestseller</a></li>
+        <li><a href="/category" class="snap-center nav-item">Category</a></li>
+        <li><a href="/community" class="snap-center nav-item">Community</a></li>
+        <li><a href="/blog" class="snap-center nav-item">Blog</a></li>
       </ul>
     </nav>
   </header>

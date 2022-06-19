@@ -1,6 +1,8 @@
 <template>
-  <header class="max-w-6xl m-auto">
-    <FurTopbar></FurTopbar>
-    <FurNavbar class="mt-14 mb-"></FurNavbar>
-  </header>
+  <Container>
+    <header class="px-8">
+      <FurTopbar></FurTopbar>
+      <FurNavbar class="mt-4 lg:mt-14 mb-"></FurNavbar>
+    </header>
+  </Container>
 </template>

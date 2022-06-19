@@ -9,11 +9,19 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  price: {
+  writer: {
     type: String,
     required: true,
   },
-  description: {
+  authorName: {
+    type: String,
+    required: true,
+  },
+  authorImage: {
+    type: String,
+    required: true,
+  },
+  createdAt: {
     type: String,
     required: true,
   },
@@ -25,8 +33,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    class="bg-white drop-shadow-lg rounded-xl px-5 py-7 flex flex-col justify-between"
+  <a
+    href="#"
+    class="bg-white hover:bg-accent drop-shadow-lg rounded-xl px-5 py-7 flex flex-col justify-between"
   >
     <div class="mb-6">
       <img :src="img" alt="" class="w-full object-cover rounded-md mb-6" />
@@ -40,12 +49,11 @@ const props = defineProps({
         <img src="/assets/icons/star.svg" alt="" />
         <img src="/assets/icons/star.svg" alt="" />
       </div>
-      <p class="mt-6 text-gray-500">Tere liye</p>
+      <p class="mt-6 text-gray-500">{{ writer }}</p>
     </div>
     <div class="flex items-center gap-2">
-      <img src="/dummy/Author avatar.png" alt="">
-      <p class="font-sans">Andre Syak <span class="text-gray-400">• 1 week ago</span> </p>
-
+      <img :src="authorImage" alt="">
+      <p class="font-sans">{{ authorName }} <span class="text-gray-400">• {{ createdAt }}</span> </p>
     </div>
-  </div>
+  </a>
 </template>

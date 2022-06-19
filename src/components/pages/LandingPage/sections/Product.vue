@@ -6,33 +6,37 @@ let productDummies = [
   {
     img: "/dummy/popular/selena_cov.png",
     name: "Selena",
-    price: "$100",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    writer: 'Tere Liye',
+    authorName: 'Andre Syaks',
+    authorImage: '/dummy/Author avatar.png',
+    createdAt: '1 week ago',
+    link: "/dummy/product-1.png",
+  },
+  {
+    img: "/dummy/popular/habis.png",
+    name: "How To Master Your Habits",
+    writer: 'Felix Y Siauw',
+    authorName: 'John Lucas',
+    authorImage: '/dummy/Author avatar.png',
+    createdAt: '5 day ago',
     link: "/dummy/product-1.png",
   },
   {
     img: "/dummy/popular/selena_cov.png",
     name: "Selena",
-    price: "$100",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    writer: 'Tere Liye',
+    authorName: 'Andre Syaks',
+    authorImage: '/dummy/Author avatar.png',
+    createdAt: '1 week ago',
     link: "/dummy/product-1.png",
   },
   {
     img: "/dummy/popular/selena_cov.png",
     name: "Selena",
-    price: "$100",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    link: "/dummy/product-1.png",
-  },
-  {
-    img: "/dummy/popular/selena_cov.png",
-    name: "Selena",
-    price: "$100",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    writer: 'Tere Liye',
+    authorName: 'Andre Syaks',
+    authorImage: '/dummy/Author avatar.png',
+    createdAt: '1 week ago',
     link: "/dummy/product-1.png",
   },
 ];
@@ -49,15 +53,17 @@ let productDummies = [
           </a>
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         <!-- loop -->
         <ProductCard
           v-for="(product, index) in productDummies"
           :key="index"
           :img="product.img"
           :name="product.name"
-          :price="product.price"
-          :description="product.description"
+          :writer="product.writer"
+          :author-name="product.authorName"
+          :author-image="product.authorImage"
+          :created-at="product.createdAt"
           :link="product.link"
         ></ProductCard>
       </div>
