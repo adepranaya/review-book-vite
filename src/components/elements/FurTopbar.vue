@@ -36,7 +36,7 @@ let sidebarShow = ref(false);
     >
       <input
         type="text"
-        class="bg-gray-100 w-full p-2 pr-8 rounded font-serif text-gray-200"
+        class="bg-gray-100 w-full p-2 pr-8 rounded font-serif placeholder-gray-400 font-light"
         placeholder="Find the book you are looking for"
       />
       <img
